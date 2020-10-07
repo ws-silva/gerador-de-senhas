@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Gerar senha</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Gerador de Senha</h1>
+        <p >Selecionar os tipos de caracteres que vai compor a senha</p>
+        <div class="item"><input type="checkbox" name="tLe" id="cLe"><label for="cLetra">Letras</label><br></div>
+        <div class="item"><input type="checkbox" name="tNum" id="cNum"><label for="cNumero">Numeros</label><br></div>
+        <div class="item"><input type="checkbox" name="tCar" id="cCar"><label for="cCaracteres">Caracteres Especiais</label><br></div>
+        <div class="item"><input type="text" name="tQtd" id="cQtd"  min="0" max="25"><label>Digite o número de caracteres da senha ex:10</label><br></div>
+        <input id="button" onclick="gerar()" type="button" value="Gerar a Senha">
+    </form>
+</body>
+</html>
